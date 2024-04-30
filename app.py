@@ -26,10 +26,10 @@ def home():
 
 
         # Print the recommended crop
-        print("Recommended crop:", predicted_crop[0])
+        print(predicted_crop[0])
     
         # Return the predicted crop as a response to the client
-        return"Recommended crop:" + str(predicted_crop[0])
+        return str(predicted_crop[0])
     else:
         return render_template('./home.html')
 
